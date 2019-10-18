@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroud1"
+        android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/username_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:hint="UserName......."
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:layout_marginTop="500dp"
+                tools:ignore="MissingConstraints"
+                android:layout_below="@+id/logging"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="25dp" />
+
+            <RelativeLayout
+                android:id="@+id/divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username_text"
+                android:layout_marginTop="10dp"
+                tools:ignore="MissingConstraints" />
+
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:layout_below="@+id/divider"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginRight="70dp"-->
+<!--                android:background="#ffffff"-->
+<!--                tools:ignore="MissingConstraints"-->
+<!--                tools:layout_editor_absoluteX="0dp"-->
+<!--                tools:layout_editor_absoluteY="65dp" />-->
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:hint="Password........"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="90dp" />
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:layout_below="@+id/divider"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginRight="70dp"-->
+<!--                android:background="#ffffff"-->
+<!--                tools:ignore="MissingConstraints"-->
+<!--                tools:layout_editor_absoluteX="0dp"-->
+<!--                tools:layout_editor_absoluteY="130dp" />-->
+
+            <Button
+                android:id="@+id/logging_facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/logging_facebook"
+                android:drawableLeft="@drawable/ic_20837"
+                android:paddingLeft="50dp"
+                android:layout_marginBottom="5dp"
+                android:text="Loging With Facebook"
+                android:textColor="@color/colorAccent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="165dp" />
+
+            <Button
+                android:id="@+id/btnToSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_shape_signup"
+                android:text="SignUp"
+                android:textColor="@color/colorAccent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="213dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:alpha="0.5"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logging"
+        android:text="@string/app_name"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        />
+
+
+</RelativeLayout>

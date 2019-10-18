@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroud1"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:alpha="0.5">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:id="@+id/loggin_name"
+        />
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="442dp"-->
+<!--        android:layout_height="264dp"-->
+<!--        android:layout_below="@+id/loggin_name"-->
+<!--        android:layout_marginTop="325dp"-->
+<!--        android:background="@color/colorPrimaryDark">-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="690dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_shape"
+        android:text="Login"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/logging_btn"
+        />
+
+
+</RelativeLayout>

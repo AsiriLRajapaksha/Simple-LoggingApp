@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroud1"
+        android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/username_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="UserName"
+                android:layout_marginTop="500dp"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="20dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="25dp"
+                tools:ignore="MissingConstraints" />
+
+            <RelativeLayout
+                android:id="@+id/divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username_text"
+                android:layout_marginTop="10dp"
+                tools:ignore="MissingConstraints"/>
+
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:layout_below="@+id/divider"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:background="#ffffff"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginRight="70dp"-->
+<!--                tools:ignore="MissingConstraints"-->
+<!--                tools:layout_editor_absoluteX="0dp"-->
+<!--                tools:layout_editor_absoluteY="65dp" />-->
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="20dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="90dp"
+                tools:ignore="MissingConstraints" />
+
+
+
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:layout_below="@+id/divider"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:background="#ffffff"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginRight="70dp"-->
+<!--                tools:ignore="MissingConstraints"-->
+<!--                tools:layout_editor_absoluteX="0dp"-->
+<!--                tools:layout_editor_absoluteY="130dp" />-->
+
+            <Button
+                android:id="@+id/btnToSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_shape"
+                android:text="SignUp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/colorAccent"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="165dp"
+                tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:alpha="0.5"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        />
+
+
+</RelativeLayout>
